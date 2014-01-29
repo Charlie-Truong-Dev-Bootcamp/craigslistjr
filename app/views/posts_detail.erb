@@ -1,0 +1,9 @@
+<div class="container">
+  <a href="/">Return to Home</a>
+  <h3><%=@post.title%></h3>
+  <p>Posted Date: <%=@post.created_at.to_date%></p>
+  <p>Status: <%=@post.status%></p>
+  <p>Price: $<%=@post.price%></p>
+  <p><%=@post.description%><p>
+  <p>Contact: <a href="mailto:<%=@post.email%>"><%=@post.email%></a></p>
+</div>

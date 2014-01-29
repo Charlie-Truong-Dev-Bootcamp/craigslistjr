@@ -1,0 +1,8 @@
+<div class="container">
+  <a href="/">Return to Home</a>
+  <ul>
+  <% @all_posts.each do |post| %>
+    <li><a href = "/post/<%=post.id%>"><%=post.title%></a></li>
+  <%end%>
+  </ul>
+</div>
